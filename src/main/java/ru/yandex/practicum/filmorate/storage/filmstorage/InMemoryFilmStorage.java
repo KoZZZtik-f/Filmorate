@@ -1,18 +1,9 @@
 package ru.yandex.practicum.filmorate.storage.filmstorage;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import ru.yandex.practicum.filmorate.config.Config;
 import ru.yandex.practicum.filmorate.exception.FilmNotFoundException;
 import ru.yandex.practicum.filmorate.model.Film;
 import ru.yandex.practicum.filmorate.storage.InMemoryStorage;
-
-import java.util.List;
-
-import static ru.yandex.practicum.filmorate.validator.Validator.validateFilm;
 
 @Component
 public class InMemoryFilmStorage extends InMemoryStorage<Film> {
