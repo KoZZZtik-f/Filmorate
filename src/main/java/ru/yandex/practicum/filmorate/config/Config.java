@@ -12,6 +12,7 @@ public class Config {
 
     public static final int MAX_FILM_DESC_LEN = 200;
     public static final LocalDate FILM_RELEASE_MIN_DATE = LocalDate.of(1895, Month.DECEMBER, 28);
+    public static final int ID_START_WITH = 1;
 
     public static List<Film> getDefaultFilms() {
         return new ArrayList<>();
