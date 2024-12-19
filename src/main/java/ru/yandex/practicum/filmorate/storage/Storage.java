@@ -1,11 +1,23 @@
 package ru.yandex.practicum.filmorate.storage;
 
+import ru.yandex.practicum.filmorate.model.User;
+
+import java.util.Collection;
+
 public interface Storage<T> {
 
-    void add(T t);
+    T get(int id);
+
+    boolean create(T t);
 
     T remove(int id);
 
-    T update(int id, T t);
+    T update(T t);
+
+    Collection<T> getAll();
+
+    int size();
+
+    boolean containsId(int id);
 
 }
